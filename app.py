@@ -4,6 +4,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Ensure Streamlit Cloud secrets are available as env vars
+for key in ("GROQ_API_KEY", "TAVILY_API_KEY"):
+    if not os.getenv(key) and key in st.secrets:
+        os.environ[key] = st.secrets[key]
+
 from agent.graph import research_agent
 
 st.set_page_config(
