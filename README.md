@@ -6,7 +6,7 @@ Built with LangGraph, Tavily, and Groq LLama 3.
 
 ## Live Demo
 
-https://ai-research-agent-yeshwanth.streamlit.app
+https://ai-research-agent-app.streamlit.app
 
 ## What it does
 
